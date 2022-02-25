@@ -1,7 +1,7 @@
 ---
 # By commenting the yaml below and uncommenting the redirect, you can chose a docs page be the home page.
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: /img/logo.svg
 tagline: 
 actionText: Quick Start →
 actionLink: /guide/

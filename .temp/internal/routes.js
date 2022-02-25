@@ -9,12 +9,32 @@ import GlobalLayout from "/Users/tom.bunn/Documents/repositories/act-docs/node_m
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
+    name: "v-39fb820f",
+    path: "/getting_started/0_getting_started/1_FAQ.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-39fb820f").then(next)
+    },
+  },
+  {
     name: "v-44e31da2",
     path: "/developer_docs/3_developer_docs/1_more_developer_docs.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-44e31da2").then(next)
     },
+  },
+  {
+    name: "v-af0a1ab0",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-af0a1ab0").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
   },
   {
     name: "v-2f8ecd75",
@@ -43,26 +63,6 @@ export const routes = [
   {
     path: "/getting_started/0_getting_started/index.html",
     redirect: "/getting_started/0_getting_started/"
-  },
-  {
-    name: "v-39fb820f",
-    path: "/getting_started/0_getting_started/1_FAQ.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-39fb820f").then(next)
-    },
-  },
-  {
-    name: "v-af0a1ab0",
-    path: "/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-af0a1ab0").then(next)
-    },
-  },
-  {
-    path: "/index.html",
-    redirect: "/"
   },
   {
     path: '*',
