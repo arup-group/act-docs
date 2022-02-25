@@ -1,0 +1,25 @@
+{
+  "name": "AWF_docserver",
+  "version": "0.0.1",
+  "description": "Documentation for the Usage and setup of AWF workflows",
+  "main": "index.js",
+  "authors": {
+    "name": "Daan",
+    "email": "daan.duppen@arup.com"
+  },
+  "repository": "/AWF_docserver",
+  "scripts": {
+    "dev": "vuepress dev src --temp .temp",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "resolutions": {
+    "watchpack": "1.6.1"
+  }
+}
