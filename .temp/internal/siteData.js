@@ -38,12 +38,12 @@ export const siteData = {
       "path": "/getting_started/0_getting_started/1_FAQ.html"
     },
     {
-      "title": "More developer docs",
+      "title": "Vuepress docs",
       "frontmatter": {},
-      "regularPath": "/developer_docs/3_developer_docs/1_more_developer_docs.html",
-      "relativePath": "developer_docs/3_developer_docs/1_more_developer_docs.md",
-      "key": "v-44e31da2",
-      "path": "/developer_docs/3_developer_docs/1_more_developer_docs.html"
+      "regularPath": "/getting_started/0_getting_started/",
+      "relativePath": "getting_started/0_getting_started/README.md",
+      "key": "v-1ec03e6e",
+      "path": "/getting_started/0_getting_started/"
     },
     {
       "title": "Home",
@@ -75,24 +75,12 @@ export const siteData = {
       "path": "/"
     },
     {
-      "title": "Developer docs",
+      "title": "Release outline",
       "frontmatter": {},
-      "regularPath": "/developer_docs/3_developer_docs/0_developer_docs.html",
-      "relativePath": "developer_docs/3_developer_docs/0_developer_docs.md",
-      "key": "v-2f8ecd75",
-      "path": "/developer_docs/3_developer_docs/0_developer_docs.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Header2",
-          "slug": "header2"
-        },
-        {
-          "level": 3,
-          "title": "Header3",
-          "slug": "header3"
-        }
-      ]
+      "regularPath": "/release_notes/0_release_notes/0_general.html",
+      "relativePath": "release_notes/0_release_notes/0_general.md",
+      "key": "v-364b4b22",
+      "path": "/release_notes/0_release_notes/0_general.html"
     },
     {
       "title": "More docs",
@@ -103,12 +91,87 @@ export const siteData = {
       "path": "/getting_started/1_more_docs/0_more_docs.html"
     },
     {
-      "title": "Vuepress docs",
+      "title": "0.0.1 (BETA)",
       "frontmatter": {},
-      "regularPath": "/getting_started/0_getting_started/",
-      "relativePath": "getting_started/0_getting_started/README.md",
-      "key": "v-1ec03e6e",
-      "path": "/getting_started/0_getting_started/"
+      "regularPath": "/release_notes/0_release_notes/1_0.0.1_beta_release.html",
+      "relativePath": "release_notes/0_release_notes/1_0.0.1_beta_release.md",
+      "key": "v-d7be7676",
+      "path": "/release_notes/0_release_notes/1_0.0.1_beta_release.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "👍 New features",
+          "slug": "👍-new-features"
+        },
+        {
+          "level": 2,
+          "title": "✅ Fixed Issues",
+          "slug": "✅-fixed-issues"
+        },
+        {
+          "level": 2,
+          "title": "🚀 Improvements",
+          "slug": "🚀-improvements"
+        },
+        {
+          "level": 2,
+          "title": "🛑 Blockers / known issues",
+          "slug": "🛑-blockers-known-issues"
+        },
+        {
+          "level": 2,
+          "title": "🗒️ Additional Resources",
+          "slug": "🗒️-additional-resources"
+        }
+      ]
+    },
+    {
+      "title": "1.0.0",
+      "frontmatter": {},
+      "regularPath": "/release_notes/1_version_1/0_1.0.0_release.html",
+      "relativePath": "release_notes/1_version_1/0_1.0.0_release.md",
+      "key": "v-351405e2",
+      "path": "/release_notes/1_version_1/0_1.0.0_release.html"
+    },
+    {
+      "title": "x.x.x Release",
+      "frontmatter": {},
+      "regularPath": "/release_notes/release_template.html",
+      "relativePath": "release_notes/release_template.md",
+      "key": "v-3902ef6b",
+      "path": "/release_notes/release_template.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "act | a carbon tool",
+          "slug": "act-a-carbon-tool"
+        },
+        {
+          "level": 3,
+          "title": "date",
+          "slug": "date"
+        },
+        {
+          "level": 2,
+          "title": "👍 New features",
+          "slug": "👍-new-features"
+        },
+        {
+          "level": 2,
+          "title": "✅ Fixed Issues",
+          "slug": "✅-fixed-issues"
+        },
+        {
+          "level": 2,
+          "title": "🚀 Improvements",
+          "slug": "🚀-improvements"
+        },
+        {
+          "level": 2,
+          "title": "🗒️ Additional Resources",
+          "slug": "🗒️-additional-resources"
+        }
+      ]
     }
   ],
   "themeConfig": {
@@ -125,12 +188,8 @@ export const siteData = {
         "link": "/getting_started/0_getting_started/"
       },
       {
-        "text": "Developer docs",
-        "link": "/developer_docs/3_developer_docs/0_developer_docs"
-      },
-      {
-        "text": "Vuepress",
-        "link": "https://v1.vuepress.vuejs.org/"
+        "text": "Release notes",
+        "link": "/release_notes/0_release_notes/0_general"
       }
     ],
     "sidebar": {
@@ -138,7 +197,7 @@ export const siteData = {
         {
           "title": "Getting started",
           "collapsable": false,
-          "sidebarDepth": 0,
+          "sidebarDepth": 1,
           "children": [
             [
               "0_getting_started/",
@@ -146,24 +205,24 @@ export const siteData = {
             ],
             "0_getting_started/1_FAQ"
           ]
-        },
-        {
-          "title": "More docs",
-          "collapsable": false,
-          "sidebarDepth": 0,
-          "children": [
-            "1_more_docs/0_more_docs"
-          ]
         }
       ],
-      "/developer_docs/": [
+      "/release_notes/": [
         {
-          "title": "Developer docs",
+          "title": "Outline",
           "collapsable": false,
-          "sidebarDepth": 0,
+          "sidebarDepth": 1,
           "children": [
-            "3_developer_docs/0_developer_docs",
-            "3_developer_docs/1_more_developer_docs"
+            "0_release_notes/0_general",
+            "0_release_notes/1_0.0.1_beta_release"
+          ]
+        },
+        {
+          "title": "Version 1",
+          "collapsable": false,
+          "sidebarDepth": 1,
+          "children": [
+            "1_version_1/0_1.0.0_release"
           ]
         }
       ]

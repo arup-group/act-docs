@@ -39,13 +39,13 @@ module.exports = {
         text: 'Getting started',
         link: '/getting_started/0_getting_started/',
       },
+      // {
+      //   text: 'Developer docs',
+      //   link: '/developer_docs/',
+      // },
       {
-        text: 'Developer docs',
-        link: '/developer_docs/3_developer_docs/0_developer_docs',
-      },
-      {
-        text: 'Vuepress',
-        link: 'https://v1.vuepress.vuejs.org/',
+        text: 'Release notes',
+        link: '/release_notes/0_release_notes/0_general',
       },
     ],
 
@@ -55,31 +55,29 @@ module.exports = {
         {
           title: 'Getting started',
           collapsable: false,
-          sidebarDepth: 0,
+          sidebarDepth: 1,
           children: [
             ['0_getting_started/', 'Getting Started'],
             '0_getting_started/1_FAQ',
           ]
         },
-        {
-          title: 'More docs',
-          collapsable: false,
-          sidebarDepth: 0,
-          children: [
-            '1_more_docs/0_more_docs',
-          ]
-        }
       ],
-      
-      // This part of the sidebar will only show on the "developer_docs" tab.
-      '/developer_docs/': [
+      '/release_notes/': [
         {
-          title: 'Developer docs',
+          title: 'Outline',
           collapsable: false,
-          sidebarDepth: 0,
+          sidebarDepth: 1,
           children: [
-            '3_developer_docs/0_developer_docs',
-            '3_developer_docs/1_more_developer_docs',
+            '0_release_notes/0_general',
+            '0_release_notes/1_0.0.1_beta_release'
+          ]
+        },
+        {
+          title: 'Version 1',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            '1_version_1/0_1.0.0_release',
           ]
         },
       ],
